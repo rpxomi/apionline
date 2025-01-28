@@ -31,7 +31,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['.onrender.com']
 
 
 # Application definition
@@ -142,7 +142,26 @@ STATIC_ROOT = BASE_DIR / 'staticfiles' # donde se van a recolectar
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_METHODS = [
-    'GET',
-    'POST'
+
+CORS_ALLOWED_ORIGINS = [
+    'https://qr-share-pro.netlify.app/',
+    "http://localhost:5173",
 ]
+
+CORS_ALLOW_METHODS = [
+    'GET'
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+
