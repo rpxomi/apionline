@@ -149,7 +149,8 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_METHODS = [
-    'GET'
+    'GET',
+    'OPTIONS',
 ]
 
 CORS_ALLOW_HEADERS = [
