@@ -145,7 +145,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     'https://qr-share-pro.netlify.app',
-    "http://localhost:5173",
 ]
 
 CORS_ALLOW_METHODS = [
